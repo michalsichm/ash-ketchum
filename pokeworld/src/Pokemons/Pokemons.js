@@ -30,7 +30,6 @@ const Pokemons = () => {
 
 
     useEffect(() => {
-        // getComments()
         fetchPokemonDetails(nextUrl);
         // eslint-disable-next-line
     }, []);
@@ -70,21 +69,11 @@ const Pokemons = () => {
     };
 
 
-
-    // const a = (pokemon, id) => {
-    //     if (pokemon.pokemonId === id) {
-    // return pokemon.pokemonComment;
-    //     }
-    // };
-
-
     return (
         <div className='flex flex-col items-center mt-5 mb-12'>
             <input type='text' placeholder='Search Pokemon' className='pl-1 border-2 border-black bg-blue-500 text-white rounded w-56 h-8 text-2xl' onChange={e => setSearchPokemon(e.target.value)} />
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {filteredPokemon.map((pokemon) => {
-                    // const c = pokemonComments.filter(pok => a(pok, pokemon.id));
-                    // const com = c.length > 0 ? c[0].pokemonComment : "";
                     return (
                         <div className='flex flex-col items-center' key={pokemon.id}>
                             <img alt='' className='w-56 h-56' src={pokemon.sprites.front_default}></img>
@@ -130,11 +119,8 @@ const Form = ({ id }) => {
             return "";
         }
     };
-    const a = () => {const fetchComment = async () => {
-        const commentText = await getComment(id);
-        setComment(commentText.comment);
-    }};
-    const b = a();
+    
+
     useEffect(() => {
         const fetchComment = async () => {
             const commentText = await getComment(id);

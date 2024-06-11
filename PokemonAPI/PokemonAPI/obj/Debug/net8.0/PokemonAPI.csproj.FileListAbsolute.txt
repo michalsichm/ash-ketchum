@@ -30,3 +30,4 @@ C:\Users\Michal\Desktop\dsx\PokemonAPI\PokemonAPI\bin\Debug\net8.0\Microsoft.Ent
 C:\Users\Michal\Desktop\dsx\PokemonAPI\PokemonAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Michal\Desktop\dsx\PokemonAPI\PokemonAPI\obj\Debug\net8.0\PokemonAPI.csproj.AssemblyReference.cache
 C:\Users\Michal\Desktop\dsx\PokemonAPI\PokemonAPI\obj\Debug\net8.0\PokemonAPI.csproj.Up2Date
+C:\Users\Michal\Desktop\dsx\PokemonAPI\PokemonAPI\obj\Debug\net8.0\PokemonAPI.sourcelink.json

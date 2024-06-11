@@ -24,7 +24,7 @@ app.MapPost("/comments", async (PokemonComment comment, PokemonCommentsDb db) =>
 
 app.MapGet("/comments/{id}", async (int id, PokemonCommentsDb db) =>
     await db.PokemonComments.FindAsync(id)
-        is PokemonComment comment ? Results.Ok(comment) : Results.NotFound());
+        is PokemonComment comment ? Results.Ok(comment) : Results.NoContent());
 
 app.MapGet("/", () => "Hello World!");
 
